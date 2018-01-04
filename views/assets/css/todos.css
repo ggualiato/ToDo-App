@@ -3,7 +3,6 @@ body{
 	background: #43C6AC;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 h1{
@@ -77,19 +76,11 @@ li:hover span{
 .submit-style {
 	background-color: rgba(67, 198, 172, 1);
 	font-size: 18px;
-
-	/* background-color: #4CAF50; */
 	border: none;
-	/* color: white; */
-	/* padding: 15px 32px; */
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	/* align: horizontal; */
-	/* font-size: 16px; */
 	margin: 4px 2px;
-	/* cursor: pointer; */
-
 }
 
 span{
@@ -108,7 +99,7 @@ span{
 	width: 360px;
 	margin: 100px auto;
 	background-color: #f7f7f7;
-	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #login-form {

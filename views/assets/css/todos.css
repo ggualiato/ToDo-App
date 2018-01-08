@@ -118,3 +118,8 @@ span{
 .fa-plus{
 	float: right;
 }
+
+#messages {
+	width: 360px;
+	margin: auto;
+}

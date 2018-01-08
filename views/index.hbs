@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lista de Tarefas</title>
-	<script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<script src="https://use.fontawesome.com/ff30d980a8.js"></script>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/todos.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <script src="assets/js/ff30d980a8.js"></script>
+  <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+  <div class="login-page">
+    <div class="form">
+      <form class="register-form" action="/register" method="POST">
+        <p>{{registerErrorMessage}}</p>
+        <input type="text" placeholder="E-mail" name="txtEmail"/>
+        <input type="password" placeholder="Password" name="txtPassword"/>
+        <button type="submit">register</button>
+        <p class="message">Already registered? <a href="#">Log In</a></p>
+      </form>
 
-<div id="notepad">
-	<h1>Lista de Tarefas<i class="fa fa-plus" aria-hidden="true"></i></h1>
+      <form class="login-form" action="/login" method="POST">
+        <p>{{loginErrorMessage}}</p>
+        <input type="text" placeholder="E-mail" name="txtEmail"/>
+        <input type="password" placeholder="Password" name="txtPassword"/>
+        <button type="submit">Log In</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>
+    </div>
+  </div>
 
-  <form action="/createTodo" method="POST">
-    <input class="input-notepad" type="text" placeholder="Adicionar Nova Tarefa" name="txtTodo">
-    <input class="input-notepad" type="submit">
-  </form>
-
-	<ul></ul>
-
-</div>
-
-<script type="text/javascript" src="assets/js/todos.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
 </body>
 </html>
